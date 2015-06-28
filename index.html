@@ -4,20 +4,23 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 <style type="text/css">
-.lazy img{display: block;}
+.lazy img{display: block; background: url(loading.gif) center center no-repeat; border: 1px solid #ccc; margin-bottom: 10px;}
 </style>
 </head>
 <body>
 <div id="lazy" class="lazy">
-	<img src="imgs/1.jpg">
-	<img src="imgs/2.jpg">
-	<img src="imgs/3.jpg">
-	<img src="imgs/4.jpg">
-	<img src="imgs/5.jpg">
-	<img src="imgs/6.jpg">
+	<img width="800" height="500" data-url="imgs/1.jpg" src="blank.gif">
+	<img width="700" height="968" data-url="imgs/2.jpg" src="blank.gif">
+	<img width="600" height="425" data-url="imgs/3.jpg" src="blank.gif">
+	<img width="480" height="270" data-url="imgs/4.jpg" src="blank.gif">
+	<img width="720" height="800" data-url="imgs/5.jpg" src="blank.gif">
+	<img width="700" height="1000" data-url="imgs/6.jpg" src="blank.gif">
 </div>
 
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery-lazyLoad.js"></script>
+<script type="text/javascript">
+	$("#lazy").lazyLoad();
+</script>
 </body>
 </html>
