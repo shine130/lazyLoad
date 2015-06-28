@@ -1,7 +1,8 @@
 /**
 * @author shine
 * @blog http://blog.ipsfan.com/
-* @version 0.1
+* @version 0.2
+* @email:shine130@vip.qq.com
 */ 
 (function($){
 	$.fn.lazyLoad=function(options){
