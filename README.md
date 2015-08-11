@@ -1,11 +1,12 @@
 # lazyLoad
 
-lazyLoad 图片延迟加载插件
+##lazyLoad 图片延迟加载插件
 
-可传参数
+###可传参数
 
-<pre>
+```javascript
 	var defaults={
-			attr:'data-url'
+			attr:'data-url',  //直实图片url地址
+            timeout:100  //延迟加载的时间
 		}
-</pre>
+```
